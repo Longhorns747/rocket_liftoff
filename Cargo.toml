@@ -1,0 +1,17 @@
+[package]
+name = "rocket_liftoff"
+version = "0.1.0"
+authors = ["Ethan Shernan <esher@microsoft.com>"]
+
+[dependencies]
+rocket = "0.2.8"
+rocket_codegen = "0.2.8"
+tera = "0.10.7"
+serde = "0.9"
+serde_derive = "0.9"
+serde_json = "0.9"
+
+[dependencies.rocket_contrib]
+version = "*"
+default-features = false
+features = ["tera_templates", "json"]
